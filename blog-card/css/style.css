@@ -1,0 +1,132 @@
+html {
+  font-size: 62.5%;
+  --color-white: #fff;
+  --color-indigo: #4338ca;
+  --color-neutral-900: #171717;
+  --color-neutral-600: #525252;
+  --color-gray: #f9fafb;
+  --color-green-700: #15803d;
+  --color-green-200: #bbf7d0;
+  --color-green-50: #f0fdf4;
+  --text-base: 1.6rem;
+  --text-large: 1.8rem;
+  --line-height-sm: 2.4rem;
+  --line--height-bg: 2.8rem;
+}
+
+body {
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--color-white);
+  width: 34rem;
+  height: 50.4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 10px rgba(20 20 20 /10%);
+  font-family: "Noto Sans";
+}
+
+.image {
+  width: 100%;
+  height: 288px;
+}
+
+.text {
+  margin: 2.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.badge {
+  color: var(--color-green-700);
+  background-color: var(--color-green-50);
+  border: 1px solid var(--color-green-200);
+  line-height: 2rem;
+  border-radius: 9999px;
+  align-self: self-start;
+  text-align: center;
+  padding: 1px;
+  width: 6.7rem;
+}
+
+.title {
+  font-size: var(--text-large);
+  line-height: var(--line--height-bg);
+  color: var(--color-neutral-900);
+  font-weight: bold;
+}
+
+/*  */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  font-size: var(--text-base);
+  line-height: var(--line-height-sm);
+}
+
+.description {
+  color: var(--color-neutral-600);
+}
+
+.cta,
+.cta:hover {
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: var(--text-base);
+  color: var(--color-indigo);
+}
+.cta:disabled {
+  color: var(--color-neutral-600);
+}
+
+.cta:focus {
+  border-radius: 4px;
+  border: 4px solid rgba(67, 56, 202, 0.2);
+}
